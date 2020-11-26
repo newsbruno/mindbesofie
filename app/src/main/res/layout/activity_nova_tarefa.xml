@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.NovaTarefaActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarNovaTarefa"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:navigationIcon="@drawable/baseline_close_white_18dp"
+        app:title="@string/new_task"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/taskEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Email"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/taskTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Titulo"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint_title"
+        android:inputType="text"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/taskDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Descricao"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint_description"
+        android:inputType="text" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
